@@ -1,3 +1,12 @@
+2026-09-05  Patrick Palka  <ppalka@redhat.com>
+
+	Backported from master:
+	2026-09-05  Patrick Palka  <ppalka@redhat.com>
+
+	PR c++/127207
+	* g++.dg/modules/friend-15_a.H: New test.
+	* g++.dg/modules/friend-15_b.C: New test.
+
 2026-09-04  Vineet Gupta  <vineet.gupta@linux.dev>
 
 	Backported from master:
