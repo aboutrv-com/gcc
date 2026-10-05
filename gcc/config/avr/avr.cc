@@ -1274,6 +1274,12 @@ avr_simple_epilogue (void)
 static int
 sequent_regs_live (void)
 {
+  // Behave according to avr_regs_to_save().
+  if (TREE_THIS_VOLATILE (current_function_decl)
+      || cfun->machine->is_OS_task
+      || cfun->machine->is_OS_main)
+    return 0;
+
   int live_seq = 0;
   int cur_seq = 0;
 
@@ -1453,8 +1459,6 @@ avr_prologue_setup_frame (HOST_WIDE_INT size, HARD_REG_SET set)
 		   && size < size_max
 		   && live_seq
 		   && !isr_p
-		   && !cfun->machine->is_OS_task
-		   && !cfun->machine->is_OS_main
 		   && !AVR_TINY);
 
   if (minimize
@@ -1981,8 +1985,6 @@ avr_expand_epilogue (bool sibcall_p)
   bool minimize = (TARGET_CALL_PROLOGUES
 		   && live_seq
 		   && !isr_p
-		   && !cfun->machine->is_OS_task
-		   && !cfun->machine->is_OS_main
 		   && !AVR_TINY);
 
   if (minimize
