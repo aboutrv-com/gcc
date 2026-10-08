@@ -1,3 +1,9 @@
+2026-10-07  Eric Botcazou  <ebotcazou@adacore.com>
+
+	PR ada/126125
+	* sem_ch8.adb (Find_Direct_Name): Add missing guard to the manual
+	walk of the scope stack used to cope with the Rtsfind mechanism.
+
 2026-09-29  Yang Yujie  <yangyujie@loongson.cn>
 
 	* libgnat/s-objrea.ads (Object_Arch): Add LOONGARCH.
