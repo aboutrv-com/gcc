@@ -1,3 +1,13 @@
+2026-10-08  Tomasz Kamiński  <tkaminsk@redhat.com>
+
+	Backported from master:
+	2026-10-07  Tomasz Kamiński  <tkaminsk@redhat.com>
+
+	* include/std/chrono (chrono::__detail::__get_leap_second_info):
+	Update expiry date for leap seconds list.
+	* src/c++20/tzdb.cc (chrono::<unnamed>::fixed_expiry): Likewise.
+	* src/c++20/tzdata.zi: Import new file from 2026e release.
+
 2026-10-05  Anlai Lu  <agicy@qq.com>
 	    Tomasz Kamiński  <tkaminsk@redhat.com>
 

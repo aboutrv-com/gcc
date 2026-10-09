@@ -1,3 +1,27 @@
+2026-10-08  Georg-Johann Lay  <avr@gjlay.de>
+
+	Backported from master:
+	2026-10-08  Georg-Johann Lay  <avr@gjlay.de>
+
+	PR target/127482
+	* gcc.target/avr/torture/pr127482.c: New test.
+
+2026-10-08  Stefan Schulze Frielinghaus  <stefansf@gcc.gnu.org>
+
+	Backported from master:
+	2026-09-20  Stefan Schulze Frielinghaus  <stefansf@gcc.gnu.org>
+
+	PR middle-end/127474
+	* gcc.dg/torture/pr127474.c: New test.
+
+2026-10-08  Uros Bizjak  <ubizjak@gmail.com>
+
+	Backported from master:
+	2026-09-30  Uros Bizjak  <ubizjak@gmail.com>
+
+	PR target/127650
+	* gcc.target/i386/pr127650.c: New test.
+
 2026-10-07  Jason Merrill  <jason@redhat.com>
 
 	PR c++/122774
