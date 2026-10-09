@@ -1,3 +1,12 @@
+2026-10-08  Tomasz Kamiński  <tkaminsk@redhat.com>
+
+	* include/std/chrono (chrono::__detail::__get_leap_second_info):
+	Update expiry date for leap seconds list.
+	* src/c++20/tzdb.cc (tzdb_list::_Node::_S_read_leap_seconds):
+	Likewise.
+	* src/c++20/tzdata.zi: Import new file from 2026e release.
+	(cherry picked with modifications from 080bfd8da2e572dab240cce4a685b342fa7c070d)
+
 2026-10-04  Jonathan Wakely  <jwakely@redhat.com>
 
 	Backported from master:
